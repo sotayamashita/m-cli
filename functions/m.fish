@@ -4,7 +4,11 @@ function m -d " Swiss Army Knife for Mac OS X"
 
     set -l cmd
 
-    switch "$argv[1]";
+    switch "$argv[1]"
+        case -h --help help
+            __m_usage > /dev/stderr
+            return
+
         case -v --version
             echo "m v$m_version"
             return
