@@ -1,4 +1,4 @@
-function __m-cli_usage
+function __m_usage
     echo "Usage: m [COMMAND]"
     echo
     echo "where COMMAND can be one of:"
