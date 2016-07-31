@@ -1,8 +1,8 @@
-function __status
+function __battery_status
     pmset -g batt
 end
 
-function __help
+function __battery_help
     echo "Usage: m battery [COMMAND]"
     echo
     echo "where COMMAND can be one of:"
@@ -13,15 +13,15 @@ end
 function __m_battery
     switch "$argv[1]"
         case status
-            __status
+            __battery_status
             return
 
         case help
-            __help
+            __battery_help
             return
 
         case \*
-            __help
+            __battery_help
 
     end
 end
