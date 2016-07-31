@@ -3,7 +3,6 @@ function __m_usage
     echo
     echo "where COMMAND can be one of:"
     echo "       battery"
-    echo "       battery"
     echo "       bluetooth"
     echo "       dir"
     echo "       disk"

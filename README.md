@@ -27,13 +27,24 @@ where COMMAND can be one of:
        status  Get the battery status
        help
 
-Examples:
-       m battery status # get the battery status
+```
+
+**Bluetooth**
+
+```javascript
+Usage: m bluetooth [COMMAND]
+
+where COMMAND can be one of:
+       status  Get bluetooth status
+       enable  Turn on bluetooth
+       disalbe Turn off bluetooth
+       help
 ```
 
 ## TODO
 
 * [x] battery
+* [x] bluetooth
 * [ ] dir
 * [ ] disk
 * [ ] dns

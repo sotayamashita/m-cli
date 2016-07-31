@@ -17,12 +17,20 @@ function m -d " Swiss Army Knife for Mac OS X"
             set -e argv[1]
             set cmd "battery"
 
+        case bluetooth
+            set -e argv[1]
+            set cmd "bluetooth"
+
         case \*
-            echo "OK"
+            __m_usage > /dev/stderr
     end
 
-    switch "$cmd";
-      case battery;
-        __m_battery $argv
+    switch "$cmd"
+        case battery
+            __m_battery $argv
+
+        case bluetooth
+            __m_bluetooth $argv
+
     end
 end
