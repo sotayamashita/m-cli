@@ -18,6 +18,41 @@ fisher sotayamashita/m-cli
 
 ## Usage
 
+```javascript
+Usage: m [COMMAND]
+
+where COMMAND can be one of:
+       battery
+       bluetooth
+       dir
+       disk
+       dns
+       dock
+       finder
+       firewall
+       gatekeeper
+       hostname
+       info
+       lock
+       ntp
+       network
+       nosleep
+       restart
+       safeboot
+       screensaver
+       service
+       shutdown
+       sleep
+       timezone
+       trash
+       update
+       user
+       volume
+       vpn
+       wallpaper
+       wifi
+```
+
 **Battery:**
 
 ```javascript
