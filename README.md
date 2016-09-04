@@ -82,19 +82,19 @@ where COMMAND can be one of:
 * [x] bluetooth
 * [ ] dir
 * [ ] disk
-* [ ] dns
+* [x] dns
 * [ ] dock
 * [ ] finder
 * [ ] firewall
 * [ ] gatekeeper
 * [ ] hostname
-* [ ] info
+* [x] info
 * [ ] lock
-* [ ] ntp
+* [x] ntp
 * [ ] network
 * [ ] nosleep
-* [ ] restart
-* [ ] safeboot
+* [x] restart
+* [x] safeboot
 * [ ] screensaver
 * [ ] service
 * [ ] shutdown

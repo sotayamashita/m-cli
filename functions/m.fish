@@ -21,6 +21,26 @@ function m -d " Swiss Army Knife for Mac OS X"
             set -e argv[1]
             set cmd "bluetooth"
 
+        case dns
+            set -e argv[1]
+            set cmd "dns"
+
+        case info
+            set -e argv[1]
+            set cmd "info"
+
+        case ntp
+            set -e argv[1]
+            set cmd "ntp"
+
+        case restart
+            set -e argv[1]
+            set cmd "restart"
+
+        case safeboot
+            set -e argv[1]
+            set cmd "safeboot"
+
         case \*
             __m_usage > /dev/stderr
     end
@@ -31,6 +51,21 @@ function m -d " Swiss Army Knife for Mac OS X"
 
         case bluetooth
             __m_bluetooth $argv
+
+        case dns
+            __m_dns $argv
+
+        case info
+            __m_info $argv
+
+        case ntp
+            __m_ntp $argv
+
+        case restart
+            __m_restart $argv
+
+        case safeboot
+            __m_safeboot $argv
 
     end
 
